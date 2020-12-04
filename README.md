@@ -1,25 +1,4 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -31,24 +10,10 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Weekly event report telegram bot</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    This is a telegram bot you can use to make a report of the weeks events and send it as message to a telegram channel, group or user. 
   </p>
 </p>
 
@@ -72,7 +37,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -85,18 +49,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+This project can be used to make reports like seen in the following image:
+![Product Name Screen Shot][product-screenshot]
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Python](https://www.python.org/)
+* [Telegram Bot API](https://core.telegram.org/bots/api)
+* [Requests: HTTPS for Humans](https://requests.readthedocs.io/en/master/)
 
 
 
@@ -107,40 +68,34 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Python [https://www.python.org/](https://www.python.org/)
+* Python Requests
   ```sh
-  npm install npm@latest -g
+  python -m pip install requests
   ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/prestitre/weekly-event-telegram-bot.git
    ```
-2. Install NPM packages
+2. Configure your bot by adding your token, calendar(ics-link), time_difference(your time difference from your calendar source) and message_reciepient(user id). To know more of the Telegram Bot API checkout: [https://core.telegram.org/bots/api](https://core.telegram.org/bots/api). And how to get user id checkout: [stackoverflow](https://stackoverflow.com/questions/32683992/find-out-my-own-user-id-for-sending-a-message-with-telegram-api) and for groups id: [stackoverflow](https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id)
+
+3. Edit the weekly report in server.py in the way you want it look. Checkout markdown formatting from: [https://core.telegram.org/bots/api#formatting-options](https://core.telegram.org/bots/api#formatting-options)
+
+4. Run the program inside telegram-bot folder with the following command
    ```sh
-   npm install
+   python server.py
    ```
+
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
+This bot was created to be easily used with cronjob to use it automatically on weekly bases.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -165,18 +120,20 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Paavo Keski-Orvola - [@ThePrestitre](https://twitter.com/ThePrestitre) - paavo.keskiorvola@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/prestitre/weekly-event-telegram-bot](https://github.com/prestitre/weekly-event-telegram-bot)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Luuppi ry](www.luuppi.fi)
+* [Telegram Bot API](https://core.telegram.org/api)
+* [Requests](https://requests.readthedocs.io/en/master/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+
 
 
 
@@ -184,15 +141,16 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/prestitre/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/prestitre/weekly-event-telegram-bot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/prestitre/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/prestitre/weekly-event-telegram-bot/network/members
+[stars-shield]: https://img.shields.io/github/stars/prestitre/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/prestitre/weekly-event-telegram-bot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/prestitre/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/prestitre/weekly-event-telegram-bot/issues
+[license-shield]: https://img.shields.io/github/license/prestitre/repo.svg?style=for-the-badge
+[license-url]: https://github.com/prestitre/weekly-event-telegram-bot/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://www.linkedin.com/in/paavo-keski-orvola-b65161142/
+[product-screenshot]: images/screenshot.png
