@@ -141,15 +141,15 @@ Project Link: [https://github.com/prestitre/weekly-event-telegram-bot](https://g
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/prestitre/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/prestitre/weekly-event-telegram-bot.svg?style=for-the-badge
 [contributors-url]: https://github.com/prestitre/weekly-event-telegram-bot/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/prestitre/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/prestitre/weekly-event-telegram-bot.svg?style=for-the-badge
 [forks-url]: https://github.com/prestitre/weekly-event-telegram-bot/network/members
-[stars-shield]: https://img.shields.io/github/stars/prestitre/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/prestitre/weekly-event-telegram-bot.svg?style=for-the-badge
 [stars-url]: https://github.com/prestitre/weekly-event-telegram-bot/stargazers
-[issues-shield]: https://img.shields.io/github/issues/prestitre/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/prestitre/weekly-event-telegram-bot.svg?style=for-the-badge
 [issues-url]: https://github.com/prestitre/weekly-event-telegram-bot/issues
-[license-shield]: https://img.shields.io/github/license/prestitre/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/prestitre/weekly-event-telegram-bot.svg?style=for-the-badge
 [license-url]: https://github.com/prestitre/weekly-event-telegram-bot/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/paavo-keski-orvola-b65161142/
